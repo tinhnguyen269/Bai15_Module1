@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<label for="num">Nhập giá trị cần chuyển đổi:</label>-->
+<!--<input type="number" id="num" oninput="covert">-->
+<!--<p>Giá trị cần chuyển sang</p>-->
+<!--<select name="value" id="value">-->
+<!--    <option value="0.305">met</option>-->
+<!--    <option value="3.279">foot</option>-->
+<!--</select>-->
+<!--<p id="result">Kết quả:</p>-->
+<script>
+ let met_input = +prompt("nhap vao met:")
+ let foot_input = +prompt("nhap vao foot:")
+
+ document.write(met_input + "meter =" + metToFoot(met_input) + "foot" + "<br>");
+ document.write(foot_input + "foot =" + footToMeter(foot_input) + "met");
+ function metToFoot () {
+     let foot = met_input * 3.279;
+     return foot;
+ }
+ function footToMeter () {
+     let meter = foot_input * 0.305;
+     return meter;
+ }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+        if (number <= 1) {
+            return false;
+        }
+        if (number <= 3) {
+            return true;
+        }
+        if (number % 2 === 0 || number % 3 === 0) {
+            return false;
+        }
+        return true;
+    }
+
+    // Sử dụng hàm để kiểm tra một số bất kỳ
+    let numberToCheck = +prompt("nhap vao so bat ki"); // Thay đổi số này thành số bạn muốn kiểm tra
+    if (isPrime(numberToCheck)) {
+        alert(numberToCheck + ' là số nguyên tố.');
+    } else {
+        alert(numberToCheck + ' không phải là số nguyên tố.');
+    }
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
